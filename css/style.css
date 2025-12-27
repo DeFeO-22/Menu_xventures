@@ -118,6 +118,14 @@ section p{
     padding-bottom: 5px;
 }
 
+.info .precio-tarjeta {
+    color: #6ec1ff;
+    font-size: 0.9em;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px dashed rgba(255,255,255,0.4);
+}
+
 .lista-precios {
     list-style: none;
     margin-bottom: 20px;
@@ -135,9 +143,22 @@ section p{
     font-size: 1.05rem;
 }
 
-.lista-precios span {
-    color: #ffd700;
+.precios {
+    display: inline-flex;
+    align-items: center;
+}
+
+.precio-efectivo {
+    color: gold;
     font-weight: bold;
+}
+
+.precio-tarjeta {
+    color: #8fd3ff;
+    font-size: 0.8em;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px dashed rgba(255,255,255,0.35);
 }
 
 .lista-ingredientes {
@@ -147,6 +168,14 @@ section p{
 
 .lista-ingredientes li {
     margin-bottom: 5px;
+    white-space: nowrap;
+    gap: 10px;
+    font-size: 1.05rem;
+}
+
+.lista-ingredientes span{
+    color: #ffd700;
+    font-weight: bold;
 }
 
 .carousel-item img {
@@ -199,11 +228,6 @@ section p{
     align-items: center;
     margin-bottom: 8px;
     white-space: nowrap;
-}
-
-.contenedor span{
-    color: #ffd700;
-    font-weight: 600;
 }
 
 .contenedor ul ul{
@@ -370,7 +394,7 @@ section p{
     transform: translateX(40px);
 }
 
-/* Base */
+
 .scroll-anim {
     opacity: 0;
     transition: all 0.7s ease;
@@ -380,7 +404,6 @@ section p{
     opacity: 1;
 }
 
-/* Animaciones específicas */
 .pizza-img {
     transform: translateX(60px);
 }
@@ -474,3 +497,6 @@ section p{
         font-size: 1.1rem;
     }
 }
+
+
+
